@@ -59,8 +59,7 @@ class _MusicListPageState extends State<MusicListPage>
         separatorBuilder: (context, index) => const Divider(),
         itemCount: musicList.length,
         itemBuilder: (context, index) {
-          return ListTile(
-            onTap: () {
+          return ListTile(            onTap: () {
               _onTap();
               setState(() {
                 _currentIndex = index;
